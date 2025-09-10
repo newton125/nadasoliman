@@ -1,4 +1,4 @@
-import Wishlist from "./_commponent/Wishlist"
+import Wishlist from "./_components/Wishlist"
 export default function Page(){
      return(
         <>

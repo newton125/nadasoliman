@@ -1,4 +1,4 @@
-import Categories from "./_commponent/catgory"
+import Categories from "./_components/catgory"
 export default function Page(){
     return(
   

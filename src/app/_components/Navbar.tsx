@@ -102,8 +102,8 @@ export default function Navbar() {
 
               {/* Wishlist icon */}
               <li>
-                <Link href="/WishList" className="relative">
-                  <i className={`fa-solid fa-heart text-2xl ${isActive("/WishList") ? "active" : ""}`}></i>
+                <Link href="/wish-list" className="relative">
+                  <i className={`fa-solid fa-heart text-2xl ${isActive("/wish-list") ? "active" : ""}`}></i>
                 </Link>
               </li>
 
@@ -166,8 +166,8 @@ export default function Navbar() {
 
                 {/* Wishlist (mobile) */}
                 <li>
-                  <Link href="/WishList" onClick={() => setIsOpen(false)}>
-                    <i className={`fa-solid fa-heart ${isActive("/WishList") ? "active" : ""}`}></i>
+                  <Link href="/wish-list" onClick={() => setIsOpen(false)}>
+                    <i className={`fa-solid fa-heart ${isActive("/wish-list") ? "active" : ""}`}></i>
                   </Link>
                 </li>
 

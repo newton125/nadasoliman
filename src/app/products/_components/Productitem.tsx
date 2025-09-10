@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
 import  ProductItemBtn from './ProductitemBtn';
-import Heartitem from '@/app/WishList/_commponet/Heartitem'
+import Heartitem from '@/app/wish-list/_components/Heartitem'
 export default function ProductItem({prod}: {prod: ProductAPI}) {
   // console.log(prod)
     return(

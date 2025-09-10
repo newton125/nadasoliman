@@ -1,9 +1,9 @@
  
 import type { Metadata } from "next";
 import { Encode_Sans_Expanded } from "next/font/google";
-import Navbar from "./_commponent/Navbar";
+import Navbar from "./_components/Navbar";
 import { Toaster } from "@/components/ui/sonner";
-import { Footer } from "./_commponent/Footer";
+import { Footer } from "./_components/Footer";
 import "./globals.css";
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import NextAuthProvider from "@/providers/Components/nextauth.providers"; 
