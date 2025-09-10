@@ -21,6 +21,7 @@ export interface CartProduct {
   _id: string;
   count: number;
   product: Product;
+  price:number;
 }
 
 // 🛍️ Product

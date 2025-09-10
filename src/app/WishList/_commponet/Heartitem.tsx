@@ -61,8 +61,10 @@ export default function Heartitem({ id }: { id: string }) {
   const handleClick = () => {
     if (heart) {
       removeMutation.mutate(id); // remove
+      setHeart(false);
     } else {
       addMutation.mutate(id); // add
+          setHeart(true); 
     }
   };
 

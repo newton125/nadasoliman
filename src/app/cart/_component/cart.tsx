@@ -103,7 +103,7 @@ export default function Cart() {
       }
     }
   }
-
+console.log(cartData?.data.products)
   return (
     <>
       <h2 className="mb-4 text-lg font-bold">
@@ -131,9 +131,9 @@ export default function Cart() {
               <div className="flex-1">
                 <h3 className="font-semibold">{item.product.title}</h3>
                 <p className="text-sm text-gray-600">
-                  {item.count *
-                    (item.product.price || 0)}{' '}
-                  EGP
+           { item.count * (item.price as any || 0) } EGP
+
+
                 </p>
                 <div className="flex items-center gap-2 mt-2">
                   <Button
@@ -239,7 +239,9 @@ export default function Cart() {
                 </td>
 
                 <td className="px-6 py-4 font-semibold text-gray-900 dark:text-white">
-                  {item.count * (item.product.price || 0)} EGP
+              { item.count * (item.price || 0) } EGP
+
+
                 </td>
 
                 <td className="px-6 py-4">
@@ -252,7 +254,8 @@ export default function Cart() {
                     className="font-medium text-red-600 dark:text-red-500 hover:underline"
                   >
                     {deletingId === item.product._id ? (
-                      'Deleting...'
+                                       <i className="fa-solid fa-spin fa-spinner"></i>
+
                     ) : (
                       <i className="fa-solid fa-trash"></i>
                     )}

@@ -16,7 +16,8 @@ export  default function Checkout({cartId}:{cartId:string}){
             city:'',
             phone:''
 
-        }
+        },
+        mode:'onChange'
     })
     async function OnSubmit(data:addressSchemaForm){
         const shippingAddress = data
@@ -30,7 +31,7 @@ export  default function Checkout({cartId}:{cartId:string}){
     return(
         <>
 <Form {...form}>
-    <form onSubmit={form.handleSubmit(OnSubmit)} className="w-1/3 mx-auto my-5">
+    <form onSubmit={form.handleSubmit(OnSubmit)} className="sm:w-full lg:w-1/3 mx-auto my-5">
         <FormField
           control ={form.control}
          name="details"
